@@ -38,3 +38,11 @@
 * [Rufus](https://rufus.ie/): 实用程序的副本来创建可启动的USB驱动器
 
 * 因为我们要使用USB复刻在电脑上安装Cento7系统，但是由于BIOS默认是从硬盘启动，因此首先需要设置开机启动项为从U盘启动。
+
+**启动：**
+
+windows开机时，点击F12，进入BIOS选择界面，选择Centos7启动
+
+### 如何在Windows和Centos7系统之间切换？
+
+
