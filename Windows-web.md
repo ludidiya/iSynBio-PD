@@ -43,6 +43,25 @@
 
 windows开机时，点击F12，进入BIOS选择界面，选择Centos7启动
 
-### 如何在Windows和Centos7系统之间切换？
+## WEB服务器
+
+* [Apache VS. Nginx](https://yq.aliyun.com/articles/586791)
+
+* [Nginx版本名区别](https://www.cnblogs.com/ppgs8903/p/4343259.html)
+
+* [Win10 上安装Nginx](https://www.jianshu.com/p/d2f30962e8ce)
+
+* 80端口被占用怎么修改；
+
+* apache配置文件 中Listen 8080与ServerName localhost:8080区别是什么?
+
+  + `listen 8080`是设置服务器监听端口
+  + `ServerName localhost:8080`只是设置服务器的注册名称，无论你加不加8080, 实际你都要使用8080端口才能触发服务器
+
+## Anaconda
+
+* [Windows 10 + Anaconda环境配置](https://blog.csdn.net/u013211009/article/details/78437098)
+
+* [conda创建虚拟环境、安装chopchop运行依赖包](https://github.com/ludidiya/iSynBio-PD/blob/main/chopchop_test.md)
 
 
