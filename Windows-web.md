@@ -1,10 +1,12 @@
 # 将windows主机作为web应用的服务器
 
-## 配置
+## 配置目录
 
 * [Git for windows](http://blog.csdn.net/woodcorpse/article/details/79313846)
 
   + [解决Git Bah中文乱码的问题](https://blog.csdn.net/jfsufeng/article/details/79219673)
+  
+  + 管理员身份启动git Bash: git bash快捷方式上“右键”-->"属性"-->“兼容性”-->勾选“以管理员身份xxx”-->“确定”
 
 * [Xshell](https://www.filehorse.com/download-xshell-free/download/)
 
@@ -24,8 +26,22 @@
   
   + WSL-Ubuntu中使用conda创建虚拟环境的路径在: `/tmp/ENTER/envs/venv-name`
 
-## MySQL
+# 1. MySQL
 
+* [下载地址](https://dev.mysql.com/downloads/installer/) (我安装的5.7)
+
+* [安装指南](https://www.runoob.com/w3cnote/windows10-mysql-installer.html)
+  + 安装过程中设置跟用户名和登陆密码
+  + 添加环境变量
+  + 从`gitbash`, `cmd`, `powershell`, 或者mysql专门的`MySQL Command Line Client`窗口都可进入mysql命令行界面
+
+* 从`gitbash`登入mysql有bug
+
+如果直接在`gitbash`中使用`mysql -uUser-name -pPassword`(注意参数后没空格)，即使登陆成果，终端中不会出现`mysql>`的标识提醒你已进入mysql命令行，并且不会展示出mysql语句运行的结果。
+
+对于这个bug，只要把进入mysql的命令换成`winpty mysql -uUser-name -pPassword`即可。
+
+[详见：Gitbash如何支持交互式命令？如何让gitbash的命令不乱码？winpty是什么鬼？干嘛用的？](https://www.cnblogs.com/saysmy/p/9970247.html)
 
 ## Install Centos7 on windows
 
