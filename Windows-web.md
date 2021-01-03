@@ -10,11 +10,19 @@
 
 * [Apache](https://www.apachehaus.com/cgi-bin/download.plx)
 
-* [Java]
-
 * [Java JDK 15.0.1]()
 
 * [MySQL 5.7]()
+
+* [WSL (Windows Subsystem for Linux) - Ubuntu 20.04](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+
+  + [Windows 和 WSL 互操作](https://docs.microsoft.com/zh-cn/windows/wsl/interop)
+  
+  + [install Anaconda on WSL-Ubuntu 20.04](https://linuxize.com/post/how-to-install-anaconda-on-ubuntu-20-04/)
+  
+  + [Manage conda channels](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-channels.html)
+  
+  + WSL-Ubuntu中使用conda创建虚拟环境的路径在: `/tmp/ENTER/envs/venv-name`
 
 ## MySQL
 
