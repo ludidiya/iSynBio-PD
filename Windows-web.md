@@ -41,8 +41,43 @@
 
 对于这个bug，只要把进入mysql的命令换成`winpty mysql -uUser-name -pPassword`即可。
 
-[详见：Gitbash如何支持交互式命令？如何让gitbash的命令不乱码？winpty是什么鬼？干嘛用的？](https://www.cnblogs.com/saysmy/p/9970247.html)
+[详见：Gitbash如何支持交互式命令？如何让gitbash的命令不乱码？winpty是什么？](https://www.cnblogs.com/saysmy/p/9970247.html)
 
+# 2. WEB服务器
+
+Apache和Nginx都安装了，装了多个web服务器要防止80端口被占用。
+
+* [Apache VS. Nginx](https://yq.aliyun.com/articles/586791)
+
+* [Nginx版本名区别](https://www.cnblogs.com/ppgs8903/p/4343259.html)
+
+* [Win10 上安装Nginx](https://www.jianshu.com/p/d2f30962e8ce)
+
+* 80端口被占用怎么修改；
+
+* apache配置文件 中Listen 8080与ServerName localhost:8080区别是什么?
+
+  + `listen 8080`是设置服务器监听端口
+  + `ServerName localhost:8080`只是设置服务器的注册名称，无论你加不加8080, 实际你都要使用8080端口才能触发服务器
+
+# 3. 安装SWL-Ubuntu20.04
+
+* [WSL (Windows Subsystem for Linux) - Ubuntu 20.04](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+
+* [Windows 和 WSL 互操作](https://docs.microsoft.com/zh-cn/windows/wsl/interop)
+
+  + WSL中运行Windows中的可执行文件要加上后缀`.exe`
+  
+  + WSL中可通过`/mnp`路径访问Windows系统中的文件
+  
+  + 可以通过在WSL中运行`ln -R /mnp/E/filePath`把想要操作的Windows文件创建一份软连接到WSL中
+  
+* [install Anaconda on WSL-Ubuntu 20.04](https://linuxize.com/post/how-to-install-anaconda-on-ubuntu-20-04/)
+  
+  + [Manage conda channels](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-channels.html)
+  
+  + WSL-Ubuntu中使用conda创建虚拟环境的路径在: `/tmp/ENTER/envs/venv-name`
+  
 ## Install Centos7 on windows
 
 准备：
@@ -66,21 +101,6 @@
 **启动：**
 
 windows开机时，点击F12，进入BIOS选择界面，选择Centos7启动
-
-## WEB服务器
-
-* [Apache VS. Nginx](https://yq.aliyun.com/articles/586791)
-
-* [Nginx版本名区别](https://www.cnblogs.com/ppgs8903/p/4343259.html)
-
-* [Win10 上安装Nginx](https://www.jianshu.com/p/d2f30962e8ce)
-
-* 80端口被占用怎么修改；
-
-* apache配置文件 中Listen 8080与ServerName localhost:8080区别是什么?
-
-  + `listen 8080`是设置服务器监听端口
-  + `ServerName localhost:8080`只是设置服务器的注册名称，无论你加不加8080, 实际你都要使用8080端口才能触发服务器
 
 ## Anaconda
 
