@@ -35,3 +35,28 @@ channels:
   - bioconda
   - defaults
 ```
+
+
+**Installation commands for Win10 x64**
+
+```
+conda install -c msft-sqlserver-example scikit-learn
+conda install -n venv-chopchop bowtie-py
+```
+
+说明：
+
+* [bowtie2 is only available for Linux and OSX.](https://anaconda.org/bioconda/bowtie2)
+
+**在Windows WSL-Ubuntu中安装bowtie**
+
+```bash
+sudo apt update
+sudo apt install bowtie
+```
+
+**[Windows和WSL互操作](https://docs.microsoft.com/zh-cn/windows/wsl/interop)：**
+
+WSL-Ubuntu的`bin`目录：`C:\Users\Lenovo\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu20.04onWindows_79rhkp1fndgsc\LocalState\rootfs\usr\bin`
+
+
