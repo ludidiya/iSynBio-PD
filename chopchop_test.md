@@ -48,15 +48,42 @@ conda install -n venv-chopchop bowtie-py
 
 * [bowtie2 is only available for Linux and OSX.](https://anaconda.org/bioconda/bowtie2)
 
-**在Windows WSL-Ubuntu中安装bowtie**
+**在Windows WSL-Ubuntu中安装bowtie和twobittofa**
 
 ```bash
 sudo apt update
 sudo apt install bowtie
 ```
 
+```
+# WSL-Ubuntu bash
+cd /bin
+wget http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/twoBitToFa
+sudo chmod 755 twoBitToFa
+
+# 由于需要区别大小写才能正常运行twoBitToFa
+# 所以设置别名更方便
+
+```
+
+## WSL-UBUNTU-20.04
+
 **[Windows和WSL互操作](https://docs.microsoft.com/zh-cn/windows/wsl/interop)：**
 
 WSL-Ubuntu的`bin`目录：`C:\Users\Lenovo\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu20.04onWindows_79rhkp1fndgsc\LocalState\rootfs\usr\bin`
+
+**WSL中安装Anaconda**
+
+* [install Anaconda on WSL-Ubuntu 20.04](https://linuxize.com/post/how-to-install-anaconda-on-ubuntu-20-04/)
+
+**WSL中conda虚拟环境**
+
+* environment location: `/tmp/ENTER/envs/venv-chopchop`
+
+* [Manage channels](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-channels.html)
+
+**其他设置：**
+
+* [Ubuntu中bash自动补全忽略大小写](https://blog.csdn.net/guyue35/article/details/52994766)
 
 
