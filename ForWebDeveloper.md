@@ -92,6 +92,10 @@
 * [WebApollo Configuration](https://genomearchitect.readthedocs.io/en/1.0.4/Configure/)
 * [Epigenome](http://epigenomegateway.wustl.edu/browser/)
 
+还有些github开源项目：
+* [Teselagen OpenVectorEditor](https://github.com/TeselaGen/openVectorEditor)
+* [nebiolabs IGV-snapshot-automator](https://github.com/nebiolabs/IGV-snapshot-automator)
+
 
 
 ## 3.2 统计图表展示
